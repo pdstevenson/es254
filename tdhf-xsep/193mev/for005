@@ -1,0 +1,11 @@
+ &files wffile='restart' /
+ &force name='Sly5', pairing='NONE',s2=1,sf=0,st=1,toten=-136.0, te=296.0 /
+ &main mprint=100,mplot=100,trestart=F,
+  mrest=100,writeselect='r',
+  imode=2,tfft=T,nof=2, tcoul=T /
+ &grid nx=64,ny=30,nz=32,dx=1.0,dy=1.0,dz=1.0,
+	periodic=F /
+ &dynamic nt=16000, dt=0.2,mxpact=6,rsep=30 /
+ &fragments fix_boost=F,filename='../../static-sly5t/es254-sly5t', 
+  '../../ca48-static-sly5t/ca48-sly5t', b=0, ecm=193,
+  fcent(:,1)=-12,0,0, fcent(:,2)=12,0,0 /
